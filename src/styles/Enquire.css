@@ -1,0 +1,73 @@
+.enquire-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+  }
+  
+  .enquire-content {
+    text-align: center;
+  }
+  
+  .enquire-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-image img {
+    margin-right: 2rem; /* Adjust the margin as needed */
+    height: 85dvh;
+    width: auto;
+    margin-bottom: 10vh;
+    margin-right: 5vw;
+  }
+  
+  .form {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    padding: 2rem;
+    background-color: white;
+    width: 40dvw;
+    height: 85dvh;
+    border-radius: 25px;
+    margin-bottom: 10vh;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: black;
+    font-weight: 700;
+    
+  }
+  
+  form input[type='text'],
+  form input[type='email'],
+  form input[type='tel'] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+  }
+  
+  form button {
+    margin-left: 20%;
+    width: 60%;
+    padding: 0.5rem;
+    background-color: #0540F2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  form button :hover{
+    background-color: #4e78f6;
+  }

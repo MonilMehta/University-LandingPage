@@ -1,0 +1,36 @@
+.navbar {
+    position: relative; /* Ensure positioning context for absolute positioning */
+    z-index: 1; /* Ensure the navbar stays on top */
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar span {
+    padding-left: 1rem; /* Add left padding to the UniversalMBBS text */
+}
+
+.navbar a {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px; /* Makes it look like capsules */
+    margin: 0 0.5rem; /* Adjust margin for space between capsules */
+    text-decoration: none;
+    color: #ffffff; /* Text color */
+}
+
+
+/* Button styling */
+.button {
+    padding: 0.5rem 1rem;
+    background-color: #0540F2; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: 1px solid black;
+    border-radius: 9999px; /* Rounded corners */
+    text-decoration: none; /* Smooth transition on hover */
+}
+
+.navbar .button:hover {
+    background-color: white; /* Change background color on hover */
+    color:#0540F2;
+}

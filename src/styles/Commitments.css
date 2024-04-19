@@ -1,0 +1,58 @@
+.excellence{
+    color:#0540F2;
+    font-size: 50px;
+    width: 44vw;
+    margin-bottom: 10vh;
+}
+.desc img{
+    width: 30vw;
+    height: 76vh;
+    margin-left: 6vw;
+    margin-bottom: 4vh;
+    z-index: 1;
+}
+.excellence-desc{
+    color: #222222;
+    font-size: 20px;
+    opacity: 80%;
+    width: 35vw;
+    margin-left: 8vw;
+    margin-bottom: 5vh;
+}
+.title{
+    display: flex;
+    align-items: center;
+    margin-top: 10vh;
+    margin-left: 6vw;
+}
+.card2 {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 25px;
+    width: 180px;
+    height: 130px;
+    padding: 20px;
+    margin-left: 33vw;
+    margin-top: 26vh;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.card{
+    background-color: #ffffff;
+    border-radius: 25px;
+    width: 180px;
+    height: 110px;
+    margin-left: 8vw;
+    margin-top: 3vh;
+    padding: 20px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,98 @@
+.misnvis {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  height: 100vh;
+  margin-top: 20vh;
+}
+
+.custom-carousel .carousel .slide {
+  background: none;
+}
+
+.enquire-content {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.enquire-content h3 {
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.carousel-item {
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 25%;
+  position: relative;
+  text-align: center;
+}
+
+.carousel-image {
+  width: 40%;
+  filter: brightness(100%);
+  transition: filter 0.3s;
+}
+
+.carousel-item:hover .carousel-image {
+  filter: brightness(70%);
+}
+
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.carousel-text h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.carousel-text p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.carousel-item:hover .carousel-text {
+  opacity: 1;
+}
+
+/* Update the styling for the left arrow */
+.carousel .control-prev {
+  transform: translateX(300px);
+}
+
+/* Update the styling for the right arrow */
+.carousel .control-next {
+  transform: translateX(-300px);
+}
+
+.carousel .control-next.control-arrow:before {
+  content: '';
+  border: solid #0540F2;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 10px; 
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.carousel .control-prev.control-arrow:before {
+  content: '';
+  border: solid #0540F2;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 10px; 
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
