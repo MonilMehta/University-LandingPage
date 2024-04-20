@@ -5,6 +5,7 @@ import Services from './Services'
 import Enquire from './Enquire'
 import MissionnVision from './MissionnVision'
 import Testimonials from './Testimonials'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -12,8 +13,11 @@ const Home = () => {
       <Commitments/>
       <Services/> 
       <MissionnVision/>
-      <Enquire/>
+      <div id="inquire" className='enquire-container'>
+        <Enquire/>
+      </div>
       <Testimonials/>
+      <Footer/>
     </div>
   )
 }

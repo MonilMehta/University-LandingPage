@@ -21,7 +21,6 @@ const Enquire = () => {
     <div className='enquire-container'>
       <div className='enquire-content'>
         <h3 className='head'>Enquire now to secure your future</h3>
-        <p className='descrip'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at massa sit amet nisi blandit vehicula adipiscing elit.</p>
       </div>
       <div className='enquire-form'>
         <div className='form-image'>

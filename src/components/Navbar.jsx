@@ -10,6 +10,16 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleInquireClick = () => {
+    const inquireSection = document.getElementById('inquire');
+    if (inquireSection) {
+      window.scrollTo({
+        top: inquireSection.offsetTop,
+        behavior: 'smooth' // Smooth scrolling behavior
+      });
+    }
+  };
+
   return (
     <div className="navbar relative" style={{ width: '100vw', backgroundRepeat: 'no-repeat' }}>
       {/* Background Image Overlay */}
@@ -46,9 +56,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex flex-col lg:flex-row">
-          <Link to="/#inquire" className="min-w-20 px-5 py-2 justify-center align-center text-center text-white bg-blue-600 mr-1 rounded-md lg:mt-0 lg:ml-0 button">         
+          <button onClick={handleInquireClick} className="min-w-20 px-5 py-2 justify-center align-center text-center text-white bg-blue-600 mr-1 rounded-md lg:mt-0 lg:ml-0 button">         
             Inquire
-          </Link>
+          </button>
           <Link to="/" className="min-w-30 px-6 py-2 justify-center align-center text-center text-white bg-blue-600 mr-9 rounded-md lg:mt-0 lg:ml-1 button">         
             Login
           </Link>
@@ -58,7 +68,9 @@ const Navbar = () => {
       <div className="hero-section flex flex-col items-center justify-center h-screen">
         <h1 className="text-white text-4xl font-bold mb-4">Your Slogan Goes Here</h1>
         <p className="text-white text-lg ml-1 mb-8 max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <Link to="/#inquire" className="px-6 py-2 bg-white text-indigo-600 font-semibold rounded-full hover:bg-indigo-600 hover:text-white transition duration-300 ease-in-out">Inquire Now</Link>
+        <button onClick={handleInquireClick} className="min-w-20 px-5 py-2 justify-center align-center text-center text-white bg-blue-600 mr-1 rounded-md lg:mt-0 lg:ml-0 button">         
+          Inquire
+        </button>
       </div>
     </div>
   );
