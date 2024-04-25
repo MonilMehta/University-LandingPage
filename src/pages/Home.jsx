@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import Commitments from '../components/Commitments'
 import Services from './Services'
 import Enquire from './Enquire'
@@ -10,6 +9,7 @@ import Footer from '../components/Footer'
 const Home = () => {
   return (
     <div className='home'>
+    
       <Commitments/>
       <Services/> 
       <MissionnVision/>

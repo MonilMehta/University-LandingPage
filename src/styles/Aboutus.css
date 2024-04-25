@@ -1,0 +1,32 @@
+.navb{
+    color: #0540F2;
+    
+}
+.about-us-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.why-choose-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-us-details h2{
+    font-size: 52px;
+    color: #0540F2;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.about-us-details p{
+    color: black;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 10vh;
+}
+.why-choose-us h2{
+    font-size: 52px;
+    color: #0540F2;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}

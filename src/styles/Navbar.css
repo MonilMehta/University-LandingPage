@@ -1,6 +1,9 @@
 .navbar {
-    position: relative; /* Ensure positioning context for absolute positioning */
-    z-index: 1; /* Ensure the navbar stays on top */
+    position: relative; 
+    z-index: 1;
+}
+.navbar .blue-text {
+    color: #0540F2; 
 }
 
 .navbar li {

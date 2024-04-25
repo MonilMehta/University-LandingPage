@@ -1,19 +1,33 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import Home from './pages/Home'
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-function App() {
+import './App.css';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import BackgroundImageContainer from './components/BackgroundImageContainer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import AboutUsPage from './pages/AboutUsPage';
 
+function App() {
   return (
-    <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/about-us" element={<AboutUsPage />} />
+      </Routes>
     </Router>
-    </>
-  )
+  );
 }
 
-export default App
+const HomePage = () => {
+  return (
+    <BackgroundImageContainer>
+      <Navbar isHomePage={true} />
+      <HeroSection />
+      <Home/>
+    </BackgroundImageContainer>
+  );
+};
+
+export default App;
