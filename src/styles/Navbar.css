@@ -2,8 +2,9 @@
     position: relative; 
     z-index: 1;
 }
-.navbar .blue-text {
+.bluetext {
     color: #0540F2; 
+    
 }
 
 .navbar li {

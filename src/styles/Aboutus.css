@@ -24,9 +24,22 @@
     margin-right: 8vw;
     margin-bottom: 10vh;
 }
+.why-choose-us{
+    margin-bottom: 500px;
+}
 .why-choose-us h2{
     font-size: 52px;
     color: #0540F2;
     margin-top: 10vh;
     margin-bottom: 10vh;
+}
+.card-content3 {
+    width: 75%;
+    margin-left: 5%;
+    color: #0540F2;
+    bottom: calc(100% + 10px); /* Position below the row of cards */
+    margin-top: 50px;
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 1;
 }

@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/Card3.css';
 
 const Navbar = ({ isHomePage }) => {
   const navigation = ["Home", "About Us", "Universities", "Services", "Gallery", "News & Notification", "Contact Us"];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showUniversityDropdown, setShowUniversityDropdown] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleUniversityDropdown = () => {
+    setShowUniversityDropdown(!showUniversityDropdown);
   };
 
   const handleInquireClick = () => {
@@ -20,11 +26,11 @@ const Navbar = ({ isHomePage }) => {
   };
 
   return (
-    <div className={`navbar relative  ${isHomePage ? 'text-white' : 'blue-text'}`} style={{ width: '100vw', backgroundRepeat: 'no-repeat' }}>
+    <div className={`navbar relative  ${isHomePage ? 'text-white' : 'bluetext'}`} style={{ width: '100vw', backgroundRepeat: 'no-repeat', color: isHomePage ? 'white' : '#0540F2' }}>
       <nav className="container relative flex flex-wrap items-center justify-between p-4 mr-0 lg:justify-between xl:px-0">
         <div className="flex items-center space-x-2 text-4xl font-medium text-white mt-2">
           <Link to="/">
-            <span className={` ${isHomePage ? 'text-white' : 'blue-text'}`}>UniversalMBBS</span>
+            <span style={{ color: isHomePage ? 'white' : '#0540F2' }}>UniversalMBBS</span>
           </Link>
         </div>
         <div className="block lg:hidden">
@@ -42,9 +48,24 @@ const Navbar = ({ isHomePage }) => {
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
               <li className="mr-3" key={index}>
-                <Link to={`/${menu.toLowerCase().replace(/\s+/g, '-')}`} className="py-2 text-lg font-normal no-underline rounded-md focus:outline-none">
-                  {menu}
-                </Link>
+                {menu === "Universities" ? (
+                  <div className="relative">
+                    <span onClick={toggleUniversityDropdown} className="py-2 text-lg font-normal no-underline rounded-md focus:outline-none cursor-pointer">
+                      {menu}
+                    </span>
+                    {showUniversityDropdown && (
+                      <ul className="absolute z-10 mt-2 py-2 px-4 bg-white border rounded-md shadow-lg w-60 unilist">
+                        <li style={{color:'#0540F2'}}><Link to="/universities/russia">Universities in Russia</Link></li>
+                        <li style={{color:'#0540F2'}}><Link to="/universities/ukraine">Universities in Ukraine</Link></li>
+                        <li style={{color:'#0540F2'}}><Link to="/universities/turkey">Universities in Turkey</Link></li>
+                      </ul>
+                    )}
+                  </div>
+                ) : (
+                  <Link to={`/${menu.toLowerCase().replace(/\s+/g, '-')}`} className="py-2 text-lg font-normal no-underline rounded-md focus:outline-none">
+                    {menu}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

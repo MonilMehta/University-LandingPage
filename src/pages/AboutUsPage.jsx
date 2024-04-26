@@ -1,11 +1,21 @@
 // AboutUsPage.jsx
+import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import React from 'react';
 import Card3 from '../components/Card3'; // Import the Card component
 import '../styles/Aboutus.css'; // Import the CSS file for styling
 
 const AboutUsPage = () => {
+  const [hoveredCardContent, setHoveredCardContent] = useState(null);
+
+  const handleHover = (content) => {
+    setHoveredCardContent(content);
+  };
+
+  const handleHoverExit = () => {
+    setHoveredCardContent(null);
+  };
+
   return (
     <div className="about-us-page">
       <Navbar isHomePage={false} />
@@ -21,27 +31,34 @@ const AboutUsPage = () => {
         <h2>Why Choose Us</h2>
         <div className="reason-cards flex flex-row">
           {/* Reason Cards */}
-          {/* Card 1: Expert Counselling */}
           <Card3
             title="Expert Counselling"
             content="Our team of experienced counsellors provides personalized guidance to help students achieve their academic goals."
+            onHover={handleHover}
+            onHoverExit={handleHoverExit}
           />
-          {/* Card 2: Wide Network */}
           <Card3
             title="Wide Network"
             content="We maintain a strong network of partner universities across the globe, ensuring that our students have access to the best education and training opportunities."
+            onHover={handleHover}
+            onHoverExit={handleHoverExit}
           />
-          {/* Card 3: Hassle-Free Process */}
           <Card3
             title="Hassle-Free Process"
             content="We provide end-to-end support for the admission process, from university selection to visa application and post-arrival support."
+            onHover={handleHover}
+            onHoverExit={handleHoverExit}
           />
-          {/* Card 4: Competitive Pricing */}
           <Card3
             title="Competitive Pricing"
             content="We offer affordable services without compromising on quality, ensuring that our clients receive the best value for their investment."
+            onHover={handleHover}
+            onHoverExit={handleHoverExit}
           />
         </div>
+        {hoveredCardContent && (
+          <p className="card-content3 text-4xl">{hoveredCardContent}</p>
+        )}
       </div>
       <Footer />
     </div>

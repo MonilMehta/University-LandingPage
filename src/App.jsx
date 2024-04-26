@@ -5,6 +5,7 @@ import BackgroundImageContainer from './components/BackgroundImageContainer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Gallery from './pages/Gallery';
 import AboutUsPage from './pages/AboutUsPage';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about-us" element={<AboutUsPage />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </Router>
   );

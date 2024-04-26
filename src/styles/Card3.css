@@ -1,27 +1,27 @@
-.card3 {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 16px;
-    background-color: #0540F2;
-    margin-top: 100px;
-    width: 15vw;
-    height: 30vh;
-    margin-left: 90px;
-    margin-bottom:30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .card-heading3 {
-    font-size: 1.25rem;
-    margin-bottom: 8px;
-     /* Blue color for headings */
-  }
-  
-  .card-content3 {
-    display: none; /* Initially hide content */
-  }
-  
+.card-container1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; /* Add margin between rows */
+}
 
-  
+.card3 {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #0540F2;
+  width: calc(15vw - 10px); /* Adjust card width to fit within container */
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+
+.card-heading3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+

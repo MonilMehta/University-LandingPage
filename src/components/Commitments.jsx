@@ -9,10 +9,10 @@ import Card from './Card';
 
 const Commitments = () => {
   const [counts, setCounts] = useState([
-    { count: 0, limit: 500 },
-    { count: 0, limit: 100 },
-    { count: 0, limit: 100 },
-    { count: 0, limit: 100 }
+    { count: 350, limit: 500,text:'students' },
+    { count: 0, limit: 20,text:"countries" },
+    { count: 0, limit: 200,text:"admissions" },
+    { count: 850, limit: 1000,text:"doctors" }
   ]);
   const controls = useAnimation();
   const { ref, inView } = useInView({
@@ -56,8 +56,8 @@ const Commitments = () => {
             {counts.map((card, index) => (
               <Card
                 key={index}
-                heading={`${card.count}`}
-                desc='abcd3'
+                heading={`${card.count}+`}
+                desc={`${card.text}`}
                 initial={{ opacity: 0, x: 100 }} // Initial state (hidden and off-screen to the right)
                 animate={controls} // Pass the animation controls to animate prop
                 transition={{ duration: 0.5, delay: index * 0.2 }}
