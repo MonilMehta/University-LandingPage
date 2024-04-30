@@ -1,16 +1,19 @@
 import React from 'react';
 import UniversityCard from '../components/UniversityCard'; // Import the UniversityCard component
 import universitiesData from '../assets/russia-uni.json'; // Import the JSON data
-
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 const UniversitiesPage = () => {
   return (
     <div className="universities-page">
+        <Navbar isHomePage={false} />
       <h1>Top 10 Colleges in Russia to Study MBBS</h1>
       <div className="university-list">
         {universitiesData.map((university, index) => (
           <UniversityCard key={index} university={university} />
         ))}
       </div>
+      <Footer/>
     </div>
   );
 };
