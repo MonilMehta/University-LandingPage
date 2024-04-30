@@ -1,0 +1,83 @@
+[
+    {
+      "universityName": "Crimea Federal University",
+      "location": "Simferopol",
+      "program": "6-year MBBS, English medium",
+      "tuitionFee": "290,000 RUB (2.7 lakhs INR)",
+      "hostelFee": "50,000 RUB (46,000 INR)",
+      "description": "One of the oldest and largest medical universities in Russia, founded in 1918. It has 16 faculties and 72 departments, offering various programs in medicine, dentistry, pharmacy, nursing, and biotechnology. Recognized by the MCI and the WHO."
+    },
+    {
+      "universityName": "Kazan Federal University",
+      "location": "Kazan",
+      "program": "6-year MBBS, English medium",
+      "tuitionFee": "438,880 RUB (4 lakhs INR)",
+      "hostelFee": "60,000 RUB (55,000 INR)",
+      "description": "Prestigious and historic university in Russia, established in 1804. It has 19 faculties and 65 departments, offering programs in medicine, engineering, humanities, and natural sciences. Recognized by the MCI and the WHO."
+    },
+    {
+      "universityName": "Siberian State Medical University",
+      "location": "Tomsk",
+      "program": "6-year MBBS, English medium",
+      "tuitionFee": "322,400 RUB (2.9 lakhs INR)",
+      "hostelFee": "40,000 RUB (37,000 INR)",
+      "description": "Leading medical university in Russia, founded in 1878. It has 9 faculties and 47 departments, offering programs in medicine, dentistry, pharmacy, public health, and biomedical sciences. Recognized by the MCI and the WHO."
+    },
+    {
+      "universityName": "First Moscow State Medical University",
+      "location": "Moscow",
+      "program": "6-year MBBS, English medium",
+      "tuitionFee": "1,144,906 RUB (10.5 lakhs INR)",
+      "hostelFee": "120,000 RUB (1.1 lakhs INR)",
+      "description": "Oldest and most reputed medical university in Russia, founded in 1758. It has 18 faculties and 150 departments, offering programs in medicine, dentistry, pharmacy, nursing, and biomedicine. Recognized by the MCI and the WHO."
+    },
+    {
+      "universityName": "OMSK State Medical University",
+      "location": "Omsk",
+      "program": "6-year MBBS, English medium",
+      "tuitionFee": "300,000 RUB (2.7 lakhs INR)",
+      "hostelFee": "30,000 RUB (27,000 INR)",
+      "description": "Prominent medical university in Russia, founded in 1920. It has 6 faculties and 49 departments, offering programs in medicine, dentistry, pharmacy, pediatrics, and preventive medicine. Recognized by the MCI and the WHO."
+    },
+    {
+      "universityName": "Belgorod State Medical University",
+      "location": "Belgorod",
+      "program": "6-year MBBS, English medium",
+      "tuitionFee": "360,000 RUB (3.3 lakhs INR)",
+      "hostelFee": "50,000 RUB (46,000 INR)",
+      "description": "Renowned medical university in Russia, founded in 1909. It has 8 faculties and 67 departments, offering programs in medicine, dentistry, pharmacy, nursing, and biotechnology. Recognized by the MCI and the WHO."
+    },
+    {
+      "universityName": "Kemerovo State Medical University",
+      "location": "Kemerovo",
+      "program": "6-year MBBS, English medium",
+      "tuitionFee": "300,000 RUB (2.7 lakhs INR)",
+      "hostelFee": "40,000 RUB (37,000 INR)",
+      "description": "Modern and dynamic medical university in Russia, founded in 1955. It has 7 faculties and 54 departments, offering programs in medicine, dentistry, pharmacy, nursing, and public health. Recognized by the MCI and the WHO."
+    },
+    {
+      "universityName": "Penza State University",
+      "location": "Penza",
+      "program": "6-year MBBS, English medium",
+      "tuitionFee": "300,000 RUB (2.7 lakhs INR)",
+      "hostelFee": "40,000 RUB (37,000 INR)",
+      "description": "Comprehensive and multidisciplinary university in Russia, founded in 1943. It has 16 faculties and 112 departments, offering programs in medicine, engineering, humanities, and natural sciences. Recognized by the MCI and the WHO."
+    },
+    {
+      "universityName": "Ryazan State Medical University",
+      "location": "Ryazan",
+      "program": "6-year MBBS, English medium",
+      "tuitionFee": "300,000 RUB (2.7 lakhs INR)",
+      "hostelFee": "40,000 RUB (37,000 INR)",
+      "description": "Progressive and innovative medical university in Russia, founded in 1950. It has 7 faculties and 56 departments, offering programs in medicine, dentistry, pharmacy, nursing, and biotechnology. Recognized by the MCI and the WHO."
+    },
+    {
+      "universityName": "Ulyanovsk State University",
+      "location": "Ulyanovsk",
+      "program": "6-year MBBS, English medium",
+      "tuitionFee": "300,000 RUB (2.7 lakhs INR)",
+      "hostelFee": "40,000 RUB (37,000 INR)",
+      "description": "Young and ambitious university in Russia, founded in 1988. It has 13 faculties and 77 departments, offering programs in medicine, engineering, humanities, and natural sciences. Recognized by the MCI and the WHO."
+    }
+  ]
+ 

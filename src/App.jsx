@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Gallery from './pages/Gallery';
 import AboutUsPage from './pages/AboutUsPage';
+import RussiaUni from './pages/RussiaUni';
+import Services1 from './pages/Services1';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/services" element={<Services1 />} />
+        <Route path="/universities/russia" element={<RussiaUni />} />
       </Routes>
     </Router>
   );

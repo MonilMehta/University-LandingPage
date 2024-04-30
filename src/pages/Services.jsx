@@ -8,32 +8,32 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      title: 'Lorem Ipsum 1',
+      title: 'University Selection Assistance',
       description: 'Lorem ipsum dolor sit ',
     },
     {
       id: 2,
-      title: 'Lorem Ipsum 2',
+      title: 'Admission Guidance',
       description: 'Ut enim ad ',
     },
     {
       id: 3,
-      title: 'Lorem Ipsum 1',
+      title: 'Visa Application Support',
       description: 'Lorem ipsum dolor sit ',
     },
     {
       id: 4,
-      title: 'Lorem Ipsum 2',
+      title: 'Pre-Departure Assistance',
       description: 'Ut enim ad ',
     },
     {
       id: 5,
-      title: 'Lorem Ipsum 1',
+      title: 'Post-Arrival Support',
       description: 'Lorem ipsum dolor sit ',
     },
     {
       id: 6,
-      title: 'Lorem Ipsum 2',
+      title: 'Additional Services',
       description: 'Ut enim ad ',
     },
   ];
