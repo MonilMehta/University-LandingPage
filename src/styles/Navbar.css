@@ -1,40 +1,99 @@
 .navbar {
-    position: relative; 
+    position: relative;
     z-index: 1;
-}
-.bluetext {
-    color: #0540F2; 
-    
-}
-
-.navbar li {
+  }
+  
+  .bluetext {
+    color: #0540f2;
+  }
+  
+  .navbar li {
     list-style: none;
-}
-
-.navbar span {
+  }
+  
+  .navbar span {
     padding-left: 1rem; /* Add left padding to the UniversalMBBS text */
-}
-
-.navbar a {
+  }
+  
+  .navbar a {
     padding: 0.5rem 1rem;
     border-radius: 9999px; /* Makes it look like capsules */
     margin: 0 0.5rem; /* Adjust margin for space between capsules */
     text-decoration: none;
     color: #ffffff; /* Text color */
-}
-
-
-/* Button styling */
-.button {
+  }
+  
+  .navbar .button {
     padding: 0.5rem 1rem;
-    background-color: #0540F2; /* Button background color */
+    background-color: #0540f2; /* Button background color */
     color: #ffffff; /* Button text color */
     border: 1px solid black;
     border-radius: 9999px; /* Rounded corners */
     text-decoration: none; /* Smooth transition on hover */
-}
-
-.navbar .button:hover {
+  }
+  
+  .navbar .button:hover {
     background-color: white; /* Change background color on hover */
-    color:#0540F2;
-}
+    color: #0540f2;
+  }
+  
+  /* Adjustments for Navbar items positioning */
+  .navbar .container {
+    display: flex;
+    justify-content: space-between; /* Align items to start and end of container */
+    align-items: center; /* Center vertically */
+  }
+  
+  .navbar .items-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .lg\\:flex {
+    display: flex;
+  }
+  
+  .navbar .items-center ul {
+    display: flex;
+    justify-content: flex-end; /* Align items to end of container */
+    align-items: center;
+    padding-top: 6px; /* Add top padding */
+  }
+  
+  .navbar .lg\\:pt-6 {
+    padding-top: 24px; /* Increase top padding for larger screens */
+  }
+  
+  .navbar .lg\\:flex-1 {
+    flex: 1; /* Take remaining space */
+  }
+  
+  .navbar .lg\\:mr-3 {
+    margin-right: 12px; /* Adjust margin between list items */
+  }
+  
+  .navbar .absolute {
+    position: absolute;
+    right: 0;
+    top: 100%; /* Position dropdown below parent */
+  }
+  
+  .navbar .unilist {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 8px 0;
+    width: 160px;
+  }
+  
+  .navbar .unilist li {
+    padding: 8px 16px;
+    color: #0540f2;
+    cursor: pointer;
+  }
+  
+  .navbar .unilist li:hover {
+    background-color: #f9fafb;
+  }
+  
