@@ -9,6 +9,8 @@ import Gallery from './pages/Gallery';
 import AboutUsPage from './pages/AboutUsPage';
 import RussiaUni from './pages/RussiaUni';
 import Services1 from './pages/Services1';
+import PrivacyPolicy from './pages/Privacy';
+import Refund from './pages/Refund';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/services" element={<Services1 />} />
         <Route path="/universities/russia" element={<RussiaUni />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/refund-policy" element={<Refund />} />
       </Routes>
     </Router>
   );

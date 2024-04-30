@@ -30,7 +30,7 @@ const Navbar = ({ isHomePage }) => {
       <nav className="container relative flex flex-wrap items-center justify-between p-4 mr-0 lg:justify-between xl:px-0">
         <div className="flex items-center space-x-2 text-4xl font-medium text-white mt-2">
           <Link to="/">
-            <span style={{ color: isHomePage ? 'white' : '#0540F2' }}>UniversalMBBS</span>
+            <span style={{ color: isHomePage ? 'white' : '#0540F2',marginLeft:'10px' }}>UniversalMBBS</span>
           </Link>
         </div>
         <div className="block lg:hidden">
