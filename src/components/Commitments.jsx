@@ -57,7 +57,6 @@ const Commitments = () => {
               <Card
                 key={index}
                 heading={`${card.count}+`}
-                desc={`${card.text}`}
                 initial={{ opacity: 0, x: 100 }} // Initial state (hidden and off-screen to the right)
                 animate={controls} // Pass the animation controls to animate prop
                 transition={{ duration: 0.5, delay: index * 0.2 }}

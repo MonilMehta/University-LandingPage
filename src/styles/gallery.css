@@ -1,17 +1,35 @@
-/* GalleryPage.css */
-.gallery-page {
-    padding: 20px;
-  }
-  
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three images per row */
-    grid-gap: 20px; /* Gap between images */
-  }
-  
-  .image-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
+.static-image-gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gallery-heading {
+  color: #0540f2;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -20px; /* gutter size offset */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 20px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.image-item {
+  margin-bottom: 20px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}

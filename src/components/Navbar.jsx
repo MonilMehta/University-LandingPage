@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/Card3.css';
 
 const Navbar = ({ isHomePage }) => {
-  const navigation = ["Home", "About Us", "Universities", "Services", "Gallery", "News & Notification", "Contact Us"];
+  const navigation = ["Home", "About Us", "Universities", "Services", "Gallery", "Privacy Policy", "Refund Policy"];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showUniversityDropdown, setShowUniversityDropdown] = useState(false);
 
@@ -71,9 +71,9 @@ const Navbar = ({ isHomePage }) => {
           </ul>
         </div>
         <div className="flex flex-col lg:flex-row">
-          <button onClick={handleInquireClick} className="min-w-20 px-5 py-2 justify-center align-center text-center text-white bg-blue-600 mr-1 rounded-md lg:mt-0 lg:ml-0 button">         
+          {isHomePage && <button onClick={handleInquireClick} className="min-w-20 px-5 py-2 justify-center align-center text-center text-white bg-blue-600 mr-1 rounded-md lg:mt-0 lg:ml-0 button">         
             Inquire
-          </button>
+          </button>}
           <Link to="/login" className="min-w-30 px-6 py-2 justify-center align-center text-center text-white bg-blue-600 mr-9 rounded-md lg:mt-0 lg:ml-1 button">         
             Login
           </Link>

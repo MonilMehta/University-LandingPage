@@ -1,47 +1,45 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios'; // Import axios for making HTTP requests
+import React from 'react';
+import Masonry from 'react-masonry-css';
+import image1 from '../assets/image1.jpg';
+import image2 from '../assets/image2.jpg';
+import image3 from '../assets/image3.jpg';
+import image4 from '../assets/image4.jpg';
+import image5 from '../assets/image5.jpg';
+import image6 from '../assets/image6.png';
+import image7 from '../assets/image7.jpeg';
+import image8 from '../assets/image8.jpeg';
+import image9 from '../assets/image9.jpeg';
+import image10 from '../assets/imae10.jpeg';
+import image11 from '../assets/image11.jpeg';
+import Image2 from '../assets/img2.png';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import '../styles/gallery.css'; // Import CSS file for styling
 
-const Gallery = () => {
-  const [images, setImages] = useState([]);
-
-  useEffect(() => {
-    // Function to fetch images from Unsplash API
-    const fetchImages = async () => {
-      try {
-        // Example API endpoint to fetch Unsplash images related to universities
-        const response = await axios.get('https://api.unsplash.com/search/photos', {
-          params: {
-            query: 'university',
-            per_page: 9, // Fetch 9 images (3x3 grid)
-            orientation: 'landscape', // Prefer landscape images
-            client_id: 'YOUR_UNSPLASH_ACCESS_KEY', // Replace with your Unsplash access key
-          },
-        });
-        setImages(response.data.results);
-      } catch (error) {
-        console.error('Error fetching images:', error);
-      }
-    };
-
-    fetchImages();
-  }, []);
+const StaticImageGallery = () => {
+  // Array of static image paths
+  const images = [image1, image2, image3, image4, image5, image6, image7, image8,image9,image10,image11];
 
   return (
-    <div className="gallery-page">
-      <Navbar isHomePage={false} />
-      <h2 style={{ color: '#05F042', textAlign: 'center', margin: '20px 0' }}>Gallery</h2>
-      <div className="image-grid">
-        {images.map((image, index) => (
-          <div key={index} className="image-item">
-            <img src={image.urls.regular} alt={`Image ${index + 1}`} />
-          </div>
-        ))}
+    <div>
+      <Navbar />
+      <div className="static-image-gallery-container mb-20">
+        <h2 className="gallery-heading">Image Gallery</h2>
+        <Masonry
+          breakpointCols={{ default: 4, 1100: 3, 700: 2, 500: 1 }}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
+          {images.map((image, index) => (
+            <div key={index} className="image-item">
+              <img src={image} alt={`Image ${index + 1}`} className="gallery-image" />
+            </div>
+          ))}
+        </Masonry>
       </div>
       <Footer />
     </div>
   );
 };
 
-export default Gallery;
+export default StaticImageGallery;

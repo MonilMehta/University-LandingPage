@@ -5,7 +5,7 @@ import Enquire from './Enquire'
 import MissionnVision from './MissionnVision'
 import Testimonials from './Testimonials'
 import Footer from '../components/Footer'
-
+import QuesList from '../components/QuesList'
 const Home = () => {
   return (
     <div className='home'>
@@ -17,6 +17,7 @@ const Home = () => {
         <Enquire/>
       </div>
       <Testimonials/>
+      <QuesList/>
       <Footer/>
     </div>
   )
